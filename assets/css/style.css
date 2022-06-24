@@ -1,24 +1,67 @@
+/* Sets the text Globally*/
+
 * {
     font-family: cursive, sans-serif;
 }
 
-
+/* Defines the background color */
 body
 {
     background-color: rgb(218, 212, 236);
 }
 
-    
+.content{
+    margin-left:50px;
+  }
+
+
+/* Unique Styles for h1-h6 */
 
 h1{
     display:flex;
 }
 
 h2{
-  margin-left:50px;
+  margin-left:1.5px;
+  margin-right:50px;
+  float: left;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+h3{
+  margin-left: 84px;
   margin-right:50px;
  float: left;
+ margin-top: 95px;
+ 
 }
+
+h4{
+  margin-left: 65px;
+  margin-right:50px;
+ float: left;
+ padding-top: 20px;
+ 
+}
+
+h5{
+  padding-top:20px;
+  margin-left: 47px;
+  margin-right:50px;
+ float: left;
+ 
+}
+
+h6{
+  margin-left:80%;
+
+  
+  margin-top: 10px;
+}
+
+
+/* Contains the style for the header section containing the NAV links*/
 
 header{
     display:flex;
@@ -32,17 +75,10 @@ header{
     color: rgb(58, 84, 133); 
 }
 
-.card {
-        
-        border-width: 1px;
-        padding-left: 25px;
-        padding-right: 25px;
-        flex: 1 0 100px;
-        margin: -1px;
-        color: rgb(42, 87, 170);
-        justify-content: space-between;
 
-}
+/* Defines .card sections */
+
+
 
 .h1card {
     border-width: 1px;
@@ -58,22 +94,25 @@ text-align: center;
 }
 
 p{
-  display: flex;
-  margin-left:50px;
+  display:flex;
+  align-items: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  padding:20px;
 }
 
 article{
-
+  margin-left:50px
 }
 
+/* This section defines the .rows that are called for in each <article> */
+
 .row {
-    display:flex;
+    display:inline;
     flex-wrap: wrap;
     flex-direction: row;
     padding-left: 0px;
+    
   }
 
 .wrow {
@@ -93,6 +132,17 @@ article{
     margin:10px;
     
   }
+
+  .Rrow {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 20px;
+    text-align:center;
+    margin-top:50px;
+    align-items: baseline;
+    
+  }
   
   li{
       display:inline;
@@ -100,21 +150,19 @@ article{
       
   }
 
+  img{
+    padding: 10px;
 
+  }
+
+  a {
+    transition: background-color .5s;
+  }
   
-img
-{
-  display: flex;
-  margin: 15px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  a:hover {
+    background-color: gold;
+  }
 
-}
-
-.Warwick
-{
-border-image-source: "https://tjex07.github.io/League-Website-2014/Warwick.html";
-}
 
 @media screen and (max-width: 768px) {
   header {
