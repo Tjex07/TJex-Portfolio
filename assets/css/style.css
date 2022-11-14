@@ -22,11 +22,18 @@ h1{
 }
 
 h2{
+  
   margin-left:1.5px;
   margin-right:50px;
   float: left;
   margin-top: 10px;
   justify-content: space-evenly;
+  border-style: solid;
+  border-left: 0px;
+  border-color: rgb(47, 47, 119);
+  border-width: 3px;
+  font-size: 50px;
+  margin-right:50px;
 }
 
 h3{
@@ -34,6 +41,11 @@ h3{
   margin-right:50px;
  float: left;
  margin-top: 95px;
+ border-style: solid;
+ border-left: 10px;
+ border-color: rgb(47, 47, 119);
+ border-width: 3px;
+ 
  
 }
 
@@ -41,7 +53,12 @@ h4{
   margin-left: 65px;
   margin-right:50px;
  float: left;
- padding-top: 20px;
+ padding-top: 0px;
+ border-style: solid;
+ border-left: 10px;
+ border-color: rgb(47, 47, 119);
+ border-width: 3px;
+
  
 }
 
@@ -60,7 +77,12 @@ h6{
   margin-top: 10px;
 }
 
-
+.border {
+  border-style: groove;
+  border-right: 10px;
+  border-color: blue;
+  border-width: 10px;
+}
 /* Contains the style for the header section containing the NAV links*/
 
 header{
@@ -77,6 +99,10 @@ header{
 
 
 /* Defines .card sections */
+
+.marge{
+  margin-left:20px;
+}
 
 
 
@@ -152,6 +178,7 @@ article{
 
   img{
     padding: 10px;
+    
 
   }
 
@@ -160,9 +187,22 @@ article{
   }
   
   a:hover {
-    background-color: gold;
+    background-color: rgb(47, 47, 119);
   }
 
+  .grow {
+    margin-left:37.9%;
+    transition: all 3s ease-in-out;
+  }
+
+  .grow:hover {
+   
+    transform: rotate(1080deg);
+  }
+  
+  .grow:active{
+    transform: scale(4);
+  }
 
 @media screen and (max-width: 768px) {
   header {
